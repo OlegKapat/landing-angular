@@ -1,18 +1,27 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import {SendformService} from './sendform.service';
+import { HttpModule } from '@angular/http';
+import { HttpClientModule, HttpClient } from '@angular/common/http';
+import { AboutfounderComponent } from './nextmaterial/aboutfounder/aboutfounder.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    AboutfounderComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    ReactiveFormsModule,
+    HttpClientModule,
+    HttpModule,
   ],
-  providers: [],
+  providers: [SendformService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
