@@ -7,11 +7,13 @@ import {SendformService} from './sendform.service';
 import { HttpModule } from '@angular/http';
 import { HttpClientModule, HttpClient } from '@angular/common/http';
 import { AboutfounderComponent } from './nextmaterial/aboutfounder/aboutfounder.component';
+import { FooterComponent } from './nextmaterial/footer/footer.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    AboutfounderComponent
+    AboutfounderComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

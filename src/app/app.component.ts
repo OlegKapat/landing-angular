@@ -26,8 +26,9 @@ export class AppComponent implements OnInit {
     'mail': {
         'required': 'Required field.',
         'pattern': 'Wrong format email.'
-    },
-   }
+    }
+};
+
     
 
     buildForm() {
@@ -75,3 +76,4 @@ onSubmit() {
     this.buildForm();
 }
 }
+

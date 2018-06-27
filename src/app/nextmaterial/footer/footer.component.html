@@ -1,0 +1,45 @@
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" id="footer">
+     <h1>Enter your full name and email address in the form below to get immediate</h1>
+     <h2><b>FREE</b> access to the <b> Dubai Lifestyle App</b></h2>
+     <div class="row forms">
+      <form [formGroup]='userForm' (ngSubmit)='onSubmit()'>
+      <div class="col-md-6 col-sm-6 col-xs-6">
+            <input  type="text" class="form-control name" formControlName="name" required placeholder="Enter Your Name" >
+            <div *ngIf="formerror.name" class="alert alert-danger">
+                {{ formerror.name }}
+            </div>
+      </div>
+    <div class="col-md-6 col-sm-6 col-xs-6">
+            <input  type="text" class="form-control mail" formControlName="mail" required placeholder="Enter Your Email">
+            <div *ngIf="formerror.mail" class="alert alert-danger">
+                {{ formerror.mail }}
+            </div>
+    </div>
+    <button class="submit" type="submit"><p class="button">GET FREE ACCESS</p></button>
+      </form>
+  </div>
+      <p class="respect">We respect your privacy and your information is 100% secure</p>
+      <div class="logos">
+        <img src="/assets/images/Logos1.png">
+      </div>
+      <p class="footertext">Binary options present a significant opportunity for you to make serious earnings, but like any investment, they present an element of risk. Potential loss of full
+         of partial funds should be considered at all times before making any trade. We urge you to explore individual tax liability laws in your country of residence, and 
+         recommend reading our Terms of Service for more information. Please note: It is illegal under U.S. law to solicit the purchase and sale of commodity options
+          unless explicitly listed for trading on a CFTC exchange or legally exempt.</p>
+          <div class="bottommenu">
+            <ul>
+              <li><a routerLink="/app-root" routerLinkActive="active" [routerLinkActiveOptions]='{exact:true}'>THERMS</a></li>
+              <li><a routerLink="/app-aboutfounder" routerLinkActive="active" [routerLinkActiveOptions]='{exact:true}'>PRIVACY</a></li>
+              <li><a routerLink="/app-footer" routerLinkActive="active" [routerLinkActiveOptions]='{exact:true}'>SUPPORT</a></li>
+            </ul>
+
+          </div>
+          
+    </div>
+
+  </div>
+
+</div>
